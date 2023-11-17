@@ -1,0 +1,48 @@
+
+POST method - new user registration
+	username:rQqcQz
+	password:L!4z!4wb895Jc5a79YS7
+{"id":747,"username":"rQqcQz","full_name":null}
+Correct status code: 200
+Correct keys
+
+POST method - login previously added user
+{"message":"You've successfully logged in. Welcome back!"}
+Correct status code: 200
+Correct keys
+<Welcome> is present in value
+
+GET method - login check
+{"id":747,"username":"rQqcQz","full_name":null}
+Correct status code: 200
+Correct keys
+
+POST method - logout
+{"message":"logged out"}
+Correct status code: 200
+Correct keys
+<out> is present in value
+
+POST method - login again for delete
+{"message":"You've successfully logged in. Welcome back!"}
+Correct status code: 200
+<Welcome> is present in value
+
+DELETE method
+{"message":"Deleted user 747"}
+Correct status code: 200
+Correct keys
+<Deleted> is present in value
+
+POST method - login again to check fail
+{"detail":"Incorrect username or password"}
+Correct status code: 401
+<Incorrect> is present in value
+
+GET method - failed check of login
+{"detail":"Could not validate credentials"}
+Correct status code: 401
+<not> is present in value
+
+-=ALL TESTS SUCCESSFULLY PASSED=-
+
