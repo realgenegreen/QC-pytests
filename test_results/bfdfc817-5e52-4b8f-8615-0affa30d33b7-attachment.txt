@@ -1,8 +1,8 @@
 
 POST method - new user registration
-	username:rQqcQz
-	password:L!4z!4wb895Jc5a79YS7
-{"id":747,"username":"rQqcQz","full_name":null}
+	username:RNnNoP
+	password:c5;9O!n!.6nT2t;89rd7
+{"id":798,"username":"RNnNoP","full_name":null}
 Correct status code: 200
 Correct keys
 
@@ -13,7 +13,7 @@ Correct keys
 <Welcome> is present in value
 
 GET method - login check
-{"id":747,"username":"rQqcQz","full_name":null}
+{"id":798,"username":"RNnNoP","full_name":null}
 Correct status code: 200
 Correct keys
 
@@ -29,7 +29,7 @@ Correct status code: 200
 <Welcome> is present in value
 
 DELETE method
-{"message":"Deleted user 747"}
+{"message":"Deleted user 798"}
 Correct status code: 200
 Correct keys
 <Deleted> is present in value

@@ -1,0 +1,104 @@
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:49.743956
+Request method: POST
+Request URL: http://localhost:5001/register
+
+Response code: 200
+Response text: {"id":798,"username":"RNnNoP","full_name":null}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '47', 'content-type': 'application/json'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.011075
+Request method: POST
+Request URL: http://localhost:5001/login
+
+Response code: 200
+Response text: {"message":"You've successfully logged in. Welcome back!"}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '58', 'content-type': 'application/json', 'set-cookie': 'Authorization="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSTm5Ob1AiLCJleHAiOjE3MDIwNzMzMzB9.tiof6ROrRHq_zZrS_RVu7oGSMSXK6JDrNgL77tUi1qU"; expires=Fri, 08 Dec 2023 22:08:50 GMT; HttpOnly; Max-Age=1800; Path=/; SameSite=lax'}
+Response cookies: {'Authorization': '"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSTm5Ob1AiLCJleHAiOjE3MDIwNzMzMzB9.tiof6ROrRHq_zZrS_RVu7oGSMSXK6JDrNgL77tUi1qU"'}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.245266
+Request method: GET
+Request URL: http://localhost:5001/users/whoami
+
+Response code: 200
+Response text: {"id":798,"username":"RNnNoP","full_name":null}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '47', 'content-type': 'application/json'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.250504
+Request method: POST
+Request URL: http://localhost:5001/logout
+
+Response code: 200
+Response text: {"message":"logged out"}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '24', 'content-type': 'application/json', 'set-cookie': 'Authorization=""; expires=Fri, 08 Dec 2023 22:08:50 GMT; HttpOnly; Max-Age=1800; Path=/; SameSite=lax'}
+Response cookies: {'Authorization': '""'}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.254862
+Request method: POST
+Request URL: http://localhost:5001/login
+
+Response code: 200
+Response text: {"message":"You've successfully logged in. Welcome back!"}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '58', 'content-type': 'application/json', 'set-cookie': 'Authorization="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSTm5Ob1AiLCJleHAiOjE3MDIwNzMzMzB9.tiof6ROrRHq_zZrS_RVu7oGSMSXK6JDrNgL77tUi1qU"; expires=Fri, 08 Dec 2023 22:08:50 GMT; HttpOnly; Max-Age=1800; Path=/; SameSite=lax'}
+Response cookies: {'Authorization': '"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSTm5Ob1AiLCJleHAiOjE3MDIwNzMzMzB9.tiof6ROrRHq_zZrS_RVu7oGSMSXK6JDrNgL77tUi1qU"'}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.487415
+Request method: DELETE
+Request URL: http://localhost:5001/user/798
+
+Response code: 200
+Response text: {"message":"Deleted user 798"}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '30', 'content-type': 'application/json'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.493992
+Request method: POST
+Request URL: http://localhost:5001/login
+
+Response code: 401
+Response text: {"detail":"Incorrect username or password"}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'content-length': '43', 'content-type': 'application/json'}
+Response cookies: {}
+
+-----
+
+-----
+Test: tests/test_api.py::Test_api::test_requests[c5;9O!n!.6nT2t;89rd7-RNnNoP] (call)
+Time: 2023-12-09 00:38:50.498795
+Request method: GET
+Request URL: http://localhost:5001/users/whoami
+
+Response code: 401
+Response text: {"detail":"Could not validate credentials"}
+Response headers: {'date': 'Fri, 08 Dec 2023 21:38:49 GMT', 'server': 'uvicorn', 'www-authenticate': 'Bearer', 'content-length': '43', 'content-type': 'application/json'}
+Response cookies: {}
+
+-----

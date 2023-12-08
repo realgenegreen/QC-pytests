@@ -49,4 +49,3 @@ class Http_methods:
             result = requests.delete(url, json='', headers=Http_methods.headers, cookies=cookies, timeout=50)
             Logger.add_response(result)
             return result
-

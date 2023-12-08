@@ -16,7 +16,7 @@ class Test_api():
     @allure.title('Requests')
     def test_requests(self, username, password):
         '''Collection of requests'''
-        
+
         allure.dynamic.parameter('username', username)
         allure.dynamic.parameter('password', password)
 #       Register
@@ -79,7 +79,7 @@ class Test_api():
             print(f'{login_post.text}')
             Check.status_code(login_post, 401)
             Check.expected_word(login_post, Qual_api.negative_keys(login_post.status_code, login=True)[0], 'Incorrect')
-        
+
         with allure.step('Checking the delete success by whoami'):
             print('\nGET method - failed check of login')
             whoami_get: Response = Qual_api.get(cookie=cookie)

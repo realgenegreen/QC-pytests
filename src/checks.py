@@ -1,6 +1,6 @@
 '''Methods collection for api checks'''
-import allure
 import json
+import allure
 from requests import Response
 
 class Check():
